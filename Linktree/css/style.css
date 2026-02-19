@@ -1,32 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-/* regras que só ativam em telas de celular (menores que 600px) */
-@media (max-width: 600px) {
-    .card {
-        padding: 20px; /* tira um pouco da gordura interna da caixa */
-    }
-
-    main {
-        font-size: 18px; /* 25px no celular é um grito, 18px é uma conversa normal */
-    }
-
-    .avatar {
-        width: 100px; /* diminui esse seu cabeção pra caber melhor */
-    }
-
-    .botao {
-        padding: 10px; /* deixa os botões menos trambolhos */
-        font-size: 16px;
-    }
-
-    footer {
-        height: 60px; /* diminui o rodapé gigante */
-        font-size: 14px;
-    }
-}
-
 body {
     height: 100vh; /* Body com altura máxima */
     margin: 0;
@@ -41,8 +12,7 @@ body {
 .card {
     background: rgb(189, 208, 155);
     color: rgb(38, 51, 35);
-    width: 90%;
-    max-width: 500px; /* Largura fixa ou max-width */
+    width: 500px; /* Largura fixa ou max-width */
     padding: 30px;
     border-radius: 20px;
     margin-top: auto;
