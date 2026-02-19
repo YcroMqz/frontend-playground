@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh; /* Body com altura máxima */
     margin: 0;
@@ -12,7 +16,8 @@ body {
 .card {
     background: rgb(189, 208, 155);
     color: rgb(38, 51, 35);
-    width: 500px; /* Largura fixa ou max-width */
+    width: 90%;
+    max-width: 500px; /* Largura fixa ou max-width */
     padding: 30px;
     border-radius: 20px;
     margin-top: auto;
