@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    color: white;
+    background-color: rgb(17, 18, 26);
+}
+
+.avatar {
+    width: 150px;
+    border: 3px solid rgb(192, 255, 98);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.bolha1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: -1;
+
+    background: greenyellow;
+
+    top: 25%;
+    right: calc(50% + 50px);
+}
+
+.bolha2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: -1;
+
+    background: greenyellow;
+
+    bottom: 25%;
+    left: calc(50% + 50px);
+}
+
+.card {
+    width: 600px;
+    padding: 70px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(80px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card h1 {
+    font-size: 50px;
+}
+
+.botao {
+    background: transparent;
+    margin-top: 50px;
+    padding: 20px 30px;
+    border: 1px solid greenyellow;
+    color: greenyellow;
+    border-radius: 10px;
+    font-size: 20px;
+
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background: greenyellow;
+    box-shadow: 0 0 15px greenyellow, 0 0 50px rgba(173, 255, 47, 0.6);
+    color: rgb(17, 18, 26);
+
+    transform: scale(1.05);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.skills span {
+    background: rgba(192, 255, 98, 0.1);
+    border: 5px solid rgba(192, 255, 98, 0.4);
+    border-radius: 20px;
+    padding: 6px 14px;
+    color: greenyellow;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
